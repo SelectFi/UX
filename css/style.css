@@ -525,6 +525,7 @@ visibility: hidden; padding-bottom: 60px; background: var(--bg_color); z-index: 
 /* h4 */
 .half h4 {font-size: 1rem !important;}
 
+
 /* Nav */
 .nav { display: flex; flex-wrap: wrap; padding-left: 0; margin-bottom: 0; list-style: none; }
 .nav-link { display: block; padding: $nav-link-padding-y $nav-link-padding-x; @include font-size($nav-link-font-size); font-weight: $nav-link-font-weight; color: $nav-link-color; text-decoration: if($link-decoration == none, null, none); @include transition($nav-link-transition);
