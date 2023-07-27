@@ -521,9 +521,7 @@ visibility: hidden; padding-bottom: 60px; background: var(--bg_color); z-index: 
 .disclaimer p { font-size: 12px; clear: both; margin-top: 20px; float: left; padding: 30px; }
 .disclaimer .half { float: left; width: calc(50% - 30px); background: #e6e6e6; padding: 30px; margin: 0 15px; border-radius: 10px; }
 .disclaimer .half p { margin: 0; padding: 0; font-size: .85rem; }
-
-/* h4 */
-.half h4 {font-size: 1rem !important;}
+.disclaimer .half h4 {font-size: 1rem !important;}
 
 
 /* Nav */
