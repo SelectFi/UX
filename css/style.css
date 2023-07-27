@@ -516,6 +516,15 @@ visibility: hidden; padding-bottom: 60px; background: var(--bg_color); z-index: 
 .d-flex { display: flex !important; }
 .title { font: 200 28px/1 var(--second_font); letter-spacing: .3px; }
 
+/* Disclaimer */
+.disclaimer { width: 100%; margin: 80px 0 0; float: left;}
+.disclaimer p { font-size: 12px; clear: both; margin-top: 20px; float: left; padding: 30px; }
+.disclaimer .half { float: left; width: calc(50% - 30px); background: #e6e6e6; padding: 30px; margin: 0 15px; border-radius: 10px; }
+.disclaimer .half p { margin: 0; padding: 0; font-size: .85rem; }
+
+/* h4 */
+.half h4 {font-size: 1rem !important;}
+
 /* Nav */
 .nav { display: flex; flex-wrap: wrap; padding-left: 0; margin-bottom: 0; list-style: none; }
 .nav-link { display: block; padding: $nav-link-padding-y $nav-link-padding-x; @include font-size($nav-link-font-size); font-weight: $nav-link-font-weight; color: $nav-link-color; text-decoration: if($link-decoration == none, null, none); @include transition($nav-link-transition);
@@ -604,11 +613,7 @@ show them when `.active`
 p.stepLabel { position: absolute; top: 30px; left: -22px; }
 .progress-bar-wrap.ty { margin-top: 60px; }
 
-/* Disclaimer */
-.disclaimer { width: 100%; margin: 80px 0 0; float: left;}
-.disclaimer p { font-size: 12px; clear: both; margin-top: 20px; float: left; padding: 30px; }
-.disclaimer .half { float: left; width: calc(50% - 30px); background: #e6e6e6; padding: 30px; margin: 0 15px; border-radius: 10px; }
-.disclaimer .half p { margin: 0; padding: 0; font-size: .85rem; }
+
 
 /*404 page*/
 .error404 { text-align: center; }
