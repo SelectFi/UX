@@ -605,7 +605,8 @@ show them when `.active`
 
 /* Thank you Progress */
 .step.thankyou { position: relative; }
-p.stepLabel { position: absolute; top: 30px; left: -22px; }
+p.stepLabel { position: absolute; top: 30px; left: -10px; }
+.thankyou:last-of-type p.stepLabel { left: -42px; }
 .progress-bar-wrap.ty { margin-top: 60px; }
 
 
