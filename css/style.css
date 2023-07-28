@@ -739,7 +739,10 @@ select:-webkit-autofill { -webkit-text-fill-color: white !important; }
     .authentication_page #configure-2fa-backup-codes .button { margin-bottom: 0; font-size: 18px; }
 }
 @media(max-width:680px) {
-    .input_box { display: block; position: relative; border: none !important; float: none; width: calc(100% - 30px); margin: 0 15px 40px; }
+    body .button {width:100%;}
+    .buttonwrap {margin:0 20px;}
+    .multi-vehicle-information .steps {width:calc(100% - 0px)}
+    .input_box { display: block; position: relative; border: none !important; float: none; width: 100%; margin: 0 0px 40px; }
     .input_box.radio_box { margin-bottom: 40px; }
     .disclaimer .half { float: none; width: calc(100% - 30px); background: #e6e6e6; padding: 30px; margin: 0 15px 30px; border-radius: 10px; }
     .disclaimer p { font-size: 12px; clear: both; margin-top: 20px; padding: 30px; float: none; }
