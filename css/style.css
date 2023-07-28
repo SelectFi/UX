@@ -602,10 +602,8 @@ show them when `.active`
     .multi-vehicle-information .label-car .price { margin-top: 6px; }
     .setting_wrap .authentication_link .grid_wrap { grid-template-columns: 100%; }
 }
-@media(max-width:450px) {
-    .content { padding-top: 10.5vh; }
-    .back_link { top: -60px; }
-}
+
+
 
 /* Thank you Progress */
 .step.thankyou { position: relative; }
