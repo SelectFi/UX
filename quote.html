@@ -197,10 +197,14 @@
                                     <span class="checkmark_label">Email</span>
                                 </label>
                                 <label>
-                                    <input type="radio" value="text" name="customerSending">
+                                    <input type="radio" value="disc" name="customerSending">
                                     <span class="checkmark_label">Phone number</span>
                                 </label>
+                                
                             </div>
+                        </div>
+                        <div class="item box disc">
+                            <p>By providing your telephone number you authorize Life Storage to contact you via text messaging for purposes relevant to your account or Life Storage's services, such as billing reminders, maintenance notifications, payment confirmations, etc. Your consent is not a condition of purchasing any of Life Storage’s goods or services. Message and data rates may apply. You may opt out at any time by visiting your account and updating your preferences or replying STOP to XXXXX. View our terms <a href="#">here</a>.</p>
                         </div>
                         <div class="item">
                             <label class="input_box">
@@ -335,6 +339,20 @@
                 </div>
             </div>
         </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});
+</script>
+
+
         <script>
             $(document).ready(()=> {
         $('select[name="add_co-applicant"]').on('change', function() {

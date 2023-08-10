@@ -189,6 +189,11 @@ body.homepage{
 .select_store_box .select_box .select_arrow { top: auto; bottom: 7px; }
 .select_store_box .switch_store_btn { font-family: 'Lato'; font-weight: 600; font-size: 16px; line-height: 19px; text-decoration-line: underline; color: #F9E900; display: inline-block; cursor: pointer; background: none; }
 
+.item p {
+    font-size: 12px;
+    padding: 0 20px 30px;
+}
+.disc {display:none;}
 /*margins*/
 .mb-5px { margin-bottom: 5px; }
 .mb-20 { margin-bottom: 20px; }
@@ -744,6 +749,7 @@ select:-webkit-autofill { -webkit-text-fill-color: white !important; }
     .disclaimer .half { float: none; width: calc(100% - 30px); background: #e6e6e6; padding: 30px; margin: 0 15px 30px; border-radius: 10px; }
     .disclaimer p { font-size: 12px; clear: both; margin-top: 20px; padding: 30px; float: none; }
     .multi-vehicle-information .progress-bar-wrap { display: flex; margin: 0 auto 65px auto; justify-content: space-between; width: 100%; max-width: calc(100% - 64px); }
+    .item p { font-size: 12px; padding: 0 0px 30px; }
 }
 /*payment_details_popup*/
 #payment_details_popup { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: none; z-index: 9; }
