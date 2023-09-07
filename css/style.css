@@ -168,9 +168,7 @@ body.homepage{
 body.toyota{
     margin: 0;
     padding: 0;
-    background-image: url(/images/ToyotaHattiesburgBtn.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background: url(/images/ToyotaHattiesburgBtn.jpg) no-repeat center center fixed;
 }
 .hotspot {
     position: absolute;
