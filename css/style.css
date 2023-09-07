@@ -165,7 +165,7 @@ body .table svg { display: block; }
 body.homepage{
 	background:#ddd;
 }
-body.toyota{
+/*body.toyota{
     margin: 0;
     padding: 0;
     background-image: url(/images/ToyotaHattiesburgBtn.png);
@@ -185,6 +185,7 @@ body.toyota{
     right: 18%;
 
 }
+*/
 /*body.toyota{
     background: url(/images/ToyotaHattiesburgScreen.png) no-repeat center center fixed;
     -webkit-background-size: cover;
