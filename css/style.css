@@ -171,6 +171,9 @@ body.toyota{
 body.basil{
     background: url(../images/BasilMitsubishi.png) no-repeat center center fixed;
 }
+body.northtown{
+    background: url(../images/NorthtownSubaruSite.png) no-repeat center center fixed;
+}
 .hotspot {
     position: absolute;
     width: 36%;
