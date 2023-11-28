@@ -168,6 +168,9 @@ body.homepage{
 body.toyota{
     background: url(../images/ToyotaHattiesburgBtn.jpg) no-repeat center center fixed;
 }
+body.pellegrino{
+    background: url(../images/pellegrinoScreen.jpg) no-repeat center center fixed;
+}
 body.basil{
     background: url(../images/BasilMitsubishi.png) no-repeat center center fixed;
 }
