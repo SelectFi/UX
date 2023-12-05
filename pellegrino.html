@@ -62,36 +62,40 @@
 <body class="homepage pellegrino">
   <div>
     <div>
-
-      <a href="http://localhost:8080/dealership-integration/?dealer_id=3386191&vin=JN8BT3CA3PW415749" class="quote hotspot">
+      <button id="selectFiInt" class="selectButton">
+        <dl class="ddr-entry-button-cta__no-impact--xlarge">
+          <dt class="ddr-entry-button-cta__text ddr-entry-button-cta__text--xlarge">
+            Get Payment Now
+          </dt>
+          <dd class="ddr-entry-button-cta__no-impact__sub-text1--xlarge">
+            No Credit Impact!
+          </dd>
+        </dl>
+         <img alt="Capital One" class="ddr-icon ddr-entry-button__icon ddr-entry-button__icon--branded ddr-entry-button__icon--branded--xlarge" src="https://pictures.dealer.com/p/pellegrinoautosalesllc/1765/2b6cccd8cb86d360591a190d785dd9ddx.jpg"> 
+      </button>
+      <!--<a href="http://localhost:8080/dealership-integration/?dealer_id=3386191&vin=JN8BT3CA3PW415749" class="quote hotspot">-->
       </a>
     </div>
   </div>
 </body>
 
-
 <script>
-  $('.quote').magnificPopup({
-    type: 'iframe',
-
-
-    iframe: {
-      markup: '<div class="mfp-iframe-scaler">' +
-        '<div class="mfp-close"></div>' +
-        '<div class="mfp-header"><div class="dLogo"><img src="images/pellegrino.jpg" alt=""/></div> <p>Get Your Payment with No Credit Impact!</p> </div>' +
-        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-        '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
-      patterns: {
-        dailymotion: {
-
-          index: 'http://localhost:8080/dealership-integration/?dealer_id=3386191&vin=JN8BT3CA3PW415749',
-          src: 'http://localhost:8080/dealership-integration/?dealer_id=3386191&vin=JN8BT3CA3PW415749'
-
+  $(document).ready(function () {
+    $('#selectFiInt').click(function () {
+      $.magnificPopup.open({
+        items: {
+          src: 'http://localhost:8080/dealership-integration/?dealer_id=3386191&vin=JN8BT3CA3PW415749',
+          type: 'iframe'
+        },
+        iframe: {
+          markup: '<div class="mfp-iframe-scaler">' +
+            '<div class="mfp-close"></div>' +
+            '<div class="mfp-header"><div class="dLogo"><img src="images/pellegrino.jpg" alt=""/></div> <p>Get Your Payment with No Credit Impact!</p> </div>' +
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+            '</div>'
         }
-      }
-    }
-
-
+      });
+    });
   });
 </script>
 
