@@ -62,7 +62,7 @@
 <body class="homepage pellegrino">
   <div>
     <div>
-      <button id="selectFiInt" class="selectButton">
+      <button id="selectFiInt" class="selectButton" data-dealership-id="1234" data-vin="5N1AZ2DJXPC115198">
         <dl class="ddr-entry-button-cta__no-impact--xlarge">
           <dt class="ddr-entry-button-cta__text ddr-entry-button-cta__text--xlarge">
             Get Payment Now
@@ -81,10 +81,18 @@
 
 <script>
   $(document).ready(function () {
-    $('#selectFiInt').click(function () {
+    $('.selectButton').click(function () {
+      // Get the dealership ID and VIN from the button's data attributes
+      const dealershipId = $(this).data('dealership-id');
+      const vin = $(this).data('vin');
+
+      // Generate the URL for the iframe with the dealership ID and VIN
+      const iframeUrl = `http://localhost:8080/dealership-integration/?dealerid=${dealershipId}&vin=${vin}`;
+
+      // Open the modal with the dynamically generated iframe URL
       $.magnificPopup.open({
         items: {
-          src: 'http://localhost:8080/dealership-integration/?dealer_id=3386191&vin=JN8BT3CA3PW415749',
+          src: iframeUrl,
           type: 'iframe'
         },
         iframe: {
