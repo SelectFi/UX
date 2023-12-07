@@ -177,6 +177,9 @@ body.basil{
 body.northtown{
     background: url(../images/NorthtownSubaruSite.png) no-repeat center center fixed;
 }
+body.transit{
+    background: url(../images/transitTowne.jpg) no-repeat center center fixed;
+}
 .hotspot {
     position: absolute;
     width: 36%;
