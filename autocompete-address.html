@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete Address</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 10px;
+        }
+
+        .autocomplete-address {
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            padding: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> Handle multiple autocompletes </h1>
+    <input id="autocomplete-address-1" class="autocomplete-address" placeholder="Enter the address" type="text"></input>
+    <input id="autocomplete-address-2" class="autocomplete-address" placeholder="Enter the company name" type="text"></input>
+    <input id="autocomplete-address-3" class="autocomplete-address" placeholder="Enter the company name" type="text"></input>
+    <div>Check console for response data</div>
+</body>
+<script>
+    function initMap() {
+        var inputs = document.getElementsByClassName('autocomplete-address');
+        console.log("found " + inputs.length + " inputs")
+        for (var i = 0; i < inputs.length; i++) {
+            const establishmentInputIds = ['autocomplete-address-2', 'autocomplete-address-3']
+            var autocomplete;
+
+            if (establishmentInputIds.includes(inputs[i].id)) { // init establishment autocomplete
+                console.log("set up establishment autocomplete for input " + inputs[i].id)
+                autocomplete = new google.maps.places.Autocomplete(inputs[i], {
+                    types: ["establishment"],
+                    componentRestrictions: {
+                        country: 'us'
+                    },
+                });
+            } else { // init address autocomplete
+                console.log("set up address autocomplete for input " + inputs[i].id)
+                autocomplete = new google.maps.places.Autocomplete(inputs[i], {
+                    types: ["address"],
+                    componentRestrictions: {
+                        country: 'us'
+                    },
+                });
+            }
+            autocomplete.inputId = inputs[i].id; // save input id to autocomplete object
+
+            // Add event listener for each input
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                var place = this.getPlace();
+                console.log(this.inputId)
+                console.log(place);
+                if (this.inputId == 'autocomplete-address-1') {
+                    console.log("Handle place for input 1");
+                } else if (this.inputId == 'autocomplete-address-2') {
+                    console.log("Handle place for input 2");
+                } else if (this.inputId == 'autocomplete-address-3') {
+                    console.log("Handle place for input 3");
+                }
+            });
+
+        }
+    }
+</script>
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4lW9H8fMHW5_4OzX8F002hosF5s0d0fo&libraries=places&callback=initMap">
+    </script>
+
+</html>
