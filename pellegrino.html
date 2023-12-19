@@ -61,7 +61,7 @@
 
 <body class="homepage pellegrino">
   <div>
-    <div>
+    <div><center>
       <button id="selectFiInt" class="selectButton" data-dealership-id="1234" data-vin="5N1AZ2DJXPC115198">
         <dl class="ddr-entry-button-cta__no-impact--xlarge">
           <dt class="ddr-entry-button-cta__text ddr-entry-button-cta__text--xlarge">
@@ -72,7 +72,7 @@
           </dd>
         </dl>
          <img alt="Capital One" class="ddr-icon ddr-entry-button__icon ddr-entry-button__icon--branded ddr-entry-button__icon--branded--xlarge" src="https://pictures.dealer.com/p/pellegrinoautosalesllc/1765/2b6cccd8cb86d360591a190d785dd9ddx.jpg"> 
-      </button>
+      </button></center>
       <!--<a href="http://localhost:8080/dealership-integration/?dealer_id=3386191&vin=JN8BT3CA3PW415749" class="quote hotspot">-->
       </a>
     </div>
@@ -87,7 +87,7 @@
       const vin = $(this).data('vin');
 
       // Generate the URL for the iframe with the dealership ID and VIN
-      const iframeUrl = `http://localhost:8080/dealership-integration/?dealerid=${dealershipId}&vin=${vin}`;
+      const iframeUrl = `https://staging.selectfi.app/dealership-integration/?dealerid=m7aP6D0KW8U&vin=${vin}`;
 
       // Open the modal with the dynamically generated iframe URL
       $.magnificPopup.open({

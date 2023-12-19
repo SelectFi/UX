@@ -117,6 +117,7 @@ body.pellegrino{background:url(../images/pellegrinoScreen.jpg) no-repeat center 
 body.basil{background:url(../images/BasilMitsubishi.png) no-repeat center center fixed;}
 body.northtown{background:url(../images/NorthtownSubaruSite.png) no-repeat center center fixed;}
 body.transit{background:url(../images/transitTowne.jpg) no-repeat center center fixed;}
+body.cecconi{background:url(../images/cecconi.jpg) no-repeat center center fixed;}
 .hotspot{position:absolute;width:36%;height:94%;background-color:none;border:none;border-radius:0%;transform:translate(50%,50%);cursor:pointer;bottom:0;right:18%;}
 ul#gform_fields_2 {
     padding: 30px;
