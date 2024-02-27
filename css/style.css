@@ -70,7 +70,11 @@ body .blue_button:hover{background:transparent;border-color:#3F60B5;color:#fff;}
 .subtitle{font-size:20px;font-weight:700;}
 .back_link{display:inline-block;position:absolute;top:-80px;left:var(--bs-gutter-x);}
 .form_wrapper{margin-bottom:45px;}
-.login-username,.login-password,.input_box{display:block;position:relative;border:none!important;float:left;width:calc(50% - 30px);margin:0 15px 40px;}
+.login-username,.login-password,.input_box{display:block;position:relative;border:none!important;float:left;width:calc(50% - 30px);margin:0 15px 30px;}
+.Page2 .input_box {width:100%}
+.input_box.third {
+    width:calc(100% - 30px);
+}
 label.input_box.full{width:calc(100% - 30px);}
 label.input_box.third{width:calc(33% - 28px);}
 .login-username label,.login-password label,.input_label{display:block;color:#666666;margin-bottom:10px;}

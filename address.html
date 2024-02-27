@@ -38,7 +38,7 @@
     <link rel="alternate" type="text/xml+oembed" href="https://selectfi-dev.forcoda.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fselectfi-dev.forcoda.com%2Fmulti-vehicle-information%2F&#038;format=xml" />
 </head>
 
-<body class="page-template page-template-multi-vehicle-information-template page-template-multi-vehicle-information-template-php page page-id-33 logged-in admin-bar no-customize-support d-flex flex-column">
+<body class="Page2 page-template page-template-multi-vehicle-information-template page-template-multi-vehicle-information-template-php page page-id-33 logged-in admin-bar no-customize-support d-flex flex-column">
     <script type="text/javascript">
     (function() {
         var request, b = document.body,
@@ -167,95 +167,90 @@
             <div class="container">
                 <div class="steps">
                     <div class="step-box active">
-                        <h2 class="title">Customer Information</h2>
+                        <h2 class="title">Customer Address
+                        </h2>
                         <div class="item">
                             <label class="input_box">
-                                <span class="input_label">First Name</span>
-                                <input data-reguired-alt="notEmpty" type="text" placeholder="" name="customerName" class="fill_next_step" required>
+                                <span class="input_label">Address</span>
+                                <input data-required="addressLine1" type="text" placeholder="" name="customerAddress" class="autocomplete-address fill_next_step" id="autocomplete-address-0" required>
                                 <span class="field-required">This field is required</span>
                             </label>
                         </div>
+
                         <div class="item">
                             <label class="input_box">
-                                <span class="input_label">Middle Name</span>
-                                <input data-reguired-alt="notEmpty" type="text" placeholder="" name="customerName" class="fill_next_step" required>
+                                <span class="input_label">Apartment, suite, etc. (optional)</span>
+                                <input type="text" placeholder="" name="customerAddress2" class="fill_next_step">
+                            </label>
+                        </div>
+                    </div>
+
+
+                        <div class="item">
+                            <label class="input_box third">
+                                <span class="input_label">City</span>
+                                <input data-required="notEmpty" type="text" placeholder="" name="customerCity" class="fill_next_step" required>
                                 <span class="field-required">This field is required</span>
                             </label>
                         </div>
+
                         <div class="item">
-                            <label class="input_box">
-                                <span class="input_label">Last Name</span>
-                                <input data-reguired-alt="notEmpty" type="text" placeholder="" name="customerName" class="fill_next_step" required>
-                                <span class="field-required">This field is required</span>
-                            </label>
-                        </div>
-                        <div class="item">
-                            <label class="input_box">
-                                <span class="input_label">Suffix</span>
-                                <select name="customerSuffix" class="fill_next_step">
-                                    <option value=""></option>
-                                    <option value="I">I</option>
-                                    <option value="II">II</option>
-                                    <option value="III">III</option>
-                                    <option value="IV">IV</option>
-                                    <option value="Jr">Jr</option>
-                                    <option value="Sr">Sr</option>
-                                </select>
-                                <span class="select_arrow">
-                                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.99727 8.01255C7.99779 8.27911 7.90484 8.53745 7.73455 8.7427L2.02324 15.5879C1.82935 15.8208 1.55074 15.9674 1.24869 15.9952C0.94665 16.023 0.645913 15.9298 0.412644 15.7362C0.179375 15.5425 0.0326816 15.2643 0.0048335 14.9626C-0.0230145 14.6609 0.0702642 14.3605 0.26415 14.1276L5.38149 8.01255L0.446913 1.89754C0.35203 1.78084 0.281173 1.64657 0.238417 1.50243C0.19566 1.35829 0.181845 1.20714 0.197768 1.05766C0.21369 0.908171 0.259034 0.763301 0.331195 0.631375C0.403356 0.499451 0.500911 0.38307 0.618252 0.288922C0.735701 0.184443 0.873488 0.105314 1.02298 0.0564938C1.17247 0.00767326 1.33045 -0.0097847 1.48701 0.00520897C1.64357 0.0202036 1.79535 0.0673275 1.93283 0.143632C2.07031 0.219936 2.19053 0.323777 2.28595 0.448645L7.80308 7.29381C7.94645 7.50496 8.01482 7.75802 7.99727 8.01255Z" fill="00000B"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="item">
-                            <label class="input_box">
-                                <span class="input_label">Phone</span>
-                                <input data-reguired-alt="tel" type="tel" placeholder="" name="customerPhone" class="fill_next_step" required>
-                                <span class="field-required">This field is required</span>
-                            </label>
-                        </div>
-                        <div class="item">
-                            <label class="input_box">
-                                <span class="input_label">Email</span>
-                                <input data-reguired-alt="email" type="email" placeholder="" name="customerEmail" class="fill_next_step" required>
-                                <span class="field-required">This field is required</span>
-                            </label>
-                        </div>
-                        <div class="item">
-                            <label class="input_box">
-                                <span class="input_label">Date of Birth</span>
-                                <input data-required="isValidDate" class="dob" type="tel" pattern="[0-9]*" inputmode="numeric" placeholder="MM/DD/YYYY" data-mask="00/00/0000" name="customerDOB" required>
-                                <span class="field-required">This field is required</span>
-                            </label>
-                        </div>
-                        <div class="item"></div>
-                        <label class="input_box">
-                            <span class="input_label">Time with Current Employer</span>
-                            <select name="timeInJob">
-                                <option value="1">less than one month</option>
-                                <option value="2">1-3 months</option>
-                                <option value="3">3-6 months</option>
-                                <option value="4">6-12 months</option>
-                                <option value="5">1-2 years</option>
-                                <option value="6">2-3 years</option>
-                                <option value="7">3-5 years</option>
-                                <option value="8">5+ years</option>
-                            </select>
-                            <span class="select_arrow">
-                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.99727 8.01255C7.99779 8.27911 7.90484 8.53745 7.73455 8.7427L2.02324 15.5879C1.82935 15.8208 1.55074 15.9674 1.24869 15.9952C0.94665 16.023 0.645913 15.9298 0.412644 15.7362C0.179375 15.5425 0.0326816 15.2643 0.0048335 14.9626C-0.0230145 14.6609 0.0702642 14.3605 0.26415 14.1276L5.38149 8.01255L0.446913 1.89754C0.35203 1.78084 0.281173 1.64657 0.238417 1.50243C0.19566 1.35829 0.181845 1.20714 0.197768 1.05766C0.21369 0.908171 0.259034 0.763301 0.331195 0.631375C0.403356 0.499451 0.500911 0.38307 0.618252 0.288922C0.735701 0.184443 0.873488 0.105314 1.02298 0.0564938C1.17247 0.00767326 1.33045 -0.0097847 1.48701 0.00520897C1.64357 0.0202036 1.79535 0.0673275 1.93283 0.143632C2.07031 0.219936 2.19053 0.323777 2.28595 0.448645L7.80308 7.29381C7.94645 7.50496 8.01482 7.75802 7.99727 8.01255Z" fill="#FBFBFB"></path>
-                                </svg>
-                            </span>
-                        </label>
-                        </div>
-                        <div class="item">
-                            <label class="input_box lineBreak">
-                                <span class="input_label ">Have You Ever Filed for Bankruptcy?</span>
-                                <select name="willYouLendDuringBK">
-                                    <option value="false">No</option>
-                                    <option value="true">Yes</option>
-                                </select>
+                            <label class="input_box third">
+                                <span class="input_label">State</span>
+                                <select name="customerState" data-required="notEmpty" class="fill_next_step">
+                                    <option value="" selected disabled> – </option>  
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select><span class="field-required">This field is required</span>
                                 <span class="select_arrow">
                                     <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.99727 8.01255C7.99779 8.27911 7.90484 8.53745 7.73455 8.7427L2.02324 15.5879C1.82935 15.8208 1.55074 15.9674 1.24869 15.9952C0.94665 16.023 0.645913 15.9298 0.412644 15.7362C0.179375 15.5425 0.0326816 15.2643 0.0048335 14.9626C-0.0230145 14.6609 0.0702642 14.3605 0.26415 14.1276L5.38149 8.01255L0.446913 1.89754C0.35203 1.78084 0.281173 1.64657 0.238417 1.50243C0.19566 1.35829 0.181845 1.20714 0.197768 1.05766C0.21369 0.908171 0.259034 0.763301 0.331195 0.631375C0.403356 0.499451 0.500911 0.38307 0.618252 0.288922C0.735701 0.184443 0.873488 0.105314 1.02298 0.0564938C1.17247 0.00767326 1.33045 -0.0097847 1.48701 0.00520897C1.64357 0.0202036 1.79535 0.0673275 1.93283 0.143632C2.07031 0.219936 2.19053 0.323777 2.28595 0.448645L7.80308 7.29381C7.94645 7.50496 8.01482 7.75802 7.99727 8.01255Z" fill="#FBFBFB"></path>
@@ -263,6 +258,15 @@
                                 </span>
                             </label>
                         </div>
+
+                        <div class="item">
+                            <label class="input_box third">
+                                <span class="input_label">ZIP</span>
+                                <input data-required="notEmpty" type="text" placeholder="" name="customerZIP" class="fill_next_step" required>
+                                <span class="field-required">This field is required</span>
+                            </label>
+                        </div>
+
                         
                         
                         <div class="form_wrap" hidden>
@@ -364,7 +368,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="address.html" class="button send_link mb-40">Next</a>
+                        <a href="signature.html" class="button send_link mb-40">Next</a>
                         <a href="thankyou.html" class="button send_link mb-40">Submit</a>
                     </div>
                     <div class="disclaimer">
