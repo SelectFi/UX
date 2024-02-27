@@ -605,6 +605,9 @@ p.stepLabel{position:absolute;top:30px;left:-10px;}
         top: 0;
         left: 0;
     }
+    .dLogo p {
+        display:none;
+    }
 
 }
 /* contact us */
