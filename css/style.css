@@ -455,7 +455,11 @@ visibility:hidden;padding-bottom:60px;background:var(--bg_color);z-index:-1;    
 #scores_messages_popup .messages_list li:not(:last-child){margin-bottom:5px;}
 .not_found_mes{text-align:center;margin:30px 0;}
 #conditionalOffers .not_found_mes{margin-bottom:80px;}
-
+input#choice_2_5_1, input#choice_2_9_1 {
+    position: relative;
+    top: -3px;
+    margin-right: 10px;
+}
 /*latest_quotes_section*/
 .latest_quotes_section .table td{padding:15px 0;}
 .latest_quotes_section .pagination{margin-top:50px;justify-content:center;}
