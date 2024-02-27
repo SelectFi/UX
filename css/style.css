@@ -602,7 +602,7 @@ body.generic {
 .hotspot {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 990px;
     background-color: none;
     border: none;
     border-radius: 0%;
