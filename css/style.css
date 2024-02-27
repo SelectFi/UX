@@ -591,7 +591,9 @@ p.stepLabel{position:absolute;top:30px;left:-10px;}
     label.input_box.third {
         width: 100%;
     }
-    body.generic{background:url(../images/mobile.jpg) no-repeat center center fixed;}
+    body.generic {
+        background: url(../images/mobile.jpg) no-repeat top center;
+    }
 
 }
 /* contact us */
