@@ -591,24 +591,28 @@ p.stepLabel{position:absolute;top:30px;left:-10px;}
     label.input_box.third {
         width: 100%;
     }
-    body.generic {
-        background: url(../images/mobile.jpg) no-repeat top center;
-    }
-    .hotspot {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: none;
-        border: none;
-        border-radius: 0%;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-    }
-    .dLogo p {
-        display:none;
-    }
+  
 
+}
+@media(max-width:550px){
+body.generic {
+    background: url(../images/mobile.jpg) no-repeat top center;
+}
+.hotspot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+    transform: unset;
+    top: 0;
+    left: 0;
+}
+.dLogo p {
+    display:none;
+}
 }
 /* contact us */
 .contact_us_template .form_wrap{margin:55px auto 0;}
