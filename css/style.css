@@ -583,7 +583,11 @@ p.stepLabel{position:absolute;top:30px;left:-10px;}
     .setting_wrap .link_box p{font-size:16px;}
     .setting_wrap .link_box button svg{width:18px;height:18px;}
 }
-
+@media(max-width:714px){
+    label.input_box.third {
+        width: 100%;
+    }
+}
 /* contact us */
 .contact_us_template .form_wrap{margin:55px auto 0;}
 .contact_us_template br{display:none;}
