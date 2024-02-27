@@ -597,6 +597,7 @@ p.stepLabel{position:absolute;top:30px;left:-10px;}
 @media(max-width:550px){
 body.generic {
     background: url(../images/mobile.jpg) no-repeat top center;
+    height: 900px;
 }
 .hotspot {
     position: absolute;
@@ -610,7 +611,7 @@ body.generic {
     top: 0;
     left: 0;
 }
-.dLogo p {
+.mfp-header p {
     display:none;
 }
 }
