@@ -612,7 +612,7 @@ body.generic {
     left: 0;
 }
 .mfp-header p {
-    display:none;
+    display:none !important;
 }
 }
 /* contact us */
