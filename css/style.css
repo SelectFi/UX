@@ -614,6 +614,16 @@ body.generic {
 .mfp-header p {
     display:none !important;
 }
+ul#gform_fields_2 {
+    padding: 0;
+    width: 100%;
+}
+div#input_2_2_Container {
+    width: 400px !important;
+}
+canvas#input_2_2 {
+    width: 295px !important;
+}
 }
 /* contact us */
 .contact_us_template .form_wrap{margin:55px auto 0;}
